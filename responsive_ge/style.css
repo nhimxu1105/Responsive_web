@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+header h1 {
+    padding: 60px 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e74c3c;
+    text-align: center;
+}
+footer {
+    padding: 60px 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #e74c3c;
+    text-align: center;
+}
+
+.gallery {
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+.gallery .img {
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    overflow: hidden;
+    margin: 10px;
+}
+.gallery .img img {
+    height: 220px;
+    width: 100%;
+    transition: 0.4s;
+}
+.gallery .img img:hover {
+    transform: scale(1.2);
+}
+@media (max-width: 760px) {
+    .gallery .img { 
+        margin: 10px 0;
+        overflow: hidden;
+    }
+
+}
