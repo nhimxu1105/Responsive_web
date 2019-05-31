@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+.container {
+    width: 100%;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 64px 0;
+}
+.inner {
+    max-width: 1200px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.inner > h1,p {
+    margin-top: 20px;
+    text-align: center;
+}
+.inner > p {
+    margin-bottom: 30px;
+}
+.inner .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.team .member {
+    flex: 33.333%;
+    max-width: 33.333%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.member .img {
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     margin: 0 auto;
+}
+.img img{
+    width: 130px;
+    height: 130px;
+    border: none;
+    border-radius: 50%;
+}
+.m-name {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 10px;
+}
+.m-job {
+    margin: 0;
+    color: gray;
+    margin-bottom: 15px; 
+}
+.icon {
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 10px;
+}
+.icon > span {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #333;
+    padding: 10px;
+    color: #fff;
+}
+@media screen and (max-width: 960px) {
+    .member {
+        flex: 100%!important;
+        max-width: 80%!important;
+        background-color: #fff;
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .member {
+        flex: 100%!important;
+        max-width: 100%!important;
+        margin: 10px;
+    }
+}
